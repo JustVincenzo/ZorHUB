@@ -14,10 +14,9 @@ class ComponentError(ZorHubError):
     """Raised when a component cannot be detected or loaded."""
 
 
-class UnsafeActionError(ZorHubError):
-    """
-    Raised when something tries to perform an unsafe action.
+class ActionError(ZorHubError):
+    """Raised when a declared safe action cannot be executed."""
 
-    In pα0.1 this should almost never happen, because privileged
-    actions are not implemented.
-    """
+
+class UnsafeActionError(ZorHubError):
+    """Raised when something tries to perform an unsafe action."""
