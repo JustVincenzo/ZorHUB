@@ -1,0 +1,146 @@
+{
+  "components": [
+    {
+      "id": "zorhub.agent",
+      "name": "ZorHUB Agent",
+      "description": "Future native component for advanced authorized system actions.",
+      "risk": "high",
+      "required": false,
+      "implemented": false,
+      "detect": {
+        "binary": "zorhub-agent"
+      },
+      "default_enabled": false,
+      "requires_agent": false,
+      "background": true
+    },
+    {
+      "id": "power.profiles",
+      "name": "Power Profiles",
+      "description": "Reads the current system power profile when power-profiles-daemon is available.",
+      "risk": "low",
+      "required": false,
+      "implemented": true,
+      "detect": {
+        "binary": "powerprofilesctl"
+      },
+      "default_enabled": true,
+      "requires_agent": false,
+      "background": false
+    },
+    {
+      "id": "backend.apt",
+      "name": "APT Backend",
+      "description": "Detects the APT package manager. Installation actions are not implemented in pα0.2.",
+      "risk": "medium",
+      "required": false,
+      "implemented": true,
+      "detect": {
+        "binary": "apt"
+      },
+      "default_enabled": true,
+      "requires_agent_for": [
+        "install",
+        "remove",
+        "repair"
+      ],
+      "background": false
+    },
+    {
+      "id": "backend.flatpak",
+      "name": "Flatpak Backend",
+      "description": "Detects Flatpak availability. Management actions are not implemented in pα0.2.",
+      "risk": "medium",
+      "required": false,
+      "implemented": true,
+      "detect": {
+        "binary": "flatpak"
+      },
+      "default_enabled": true,
+      "requires_agent_for": [
+        "install",
+        "remove",
+        "permissions"
+      ],
+      "background": false
+    },
+    {
+      "id": "backend.snap",
+      "name": "Snap Backend",
+      "description": "Detects Snap availability if installed by the user or distribution.",
+      "risk": "medium",
+      "required": false,
+      "implemented": true,
+      "detect": {
+        "binary": "snap"
+      },
+      "default_enabled": false,
+      "requires_agent_for": [
+        "install",
+        "remove"
+      ],
+      "background": false
+    },
+    {
+      "id": "integration.zorin_connect",
+      "name": "Zorin Connect Integration",
+      "description": "Future visual layer for Zorin Connect inside ZorHUB.",
+      "risk": "low",
+      "required": false,
+      "implemented": false,
+      "detect": {
+        "binary": "kdeconnect-cli"
+      },
+      "default_enabled": true,
+      "requires_agent": false,
+      "background": false
+    },
+    {
+      "id": "sensors.lm_sensors",
+      "name": "Sensors",
+      "description": "Detects lm-sensors for future temperature readings.",
+      "risk": "low",
+      "required": false,
+      "implemented": true,
+      "detect": {
+        "binary": "sensors"
+      },
+      "default_enabled": true,
+      "requires_agent": false,
+      "background": false
+    },
+    {
+      "id": "firmware.fwupd",
+      "name": "Firmware",
+      "description": "Detects fwupd for future firmware status features.",
+      "risk": "medium",
+      "required": false,
+      "implemented": true,
+      "detect": {
+        "binary": "fwupdmgr"
+      },
+      "default_enabled": false,
+      "requires_agent_for": [
+        "update"
+      ],
+      "background": false
+    },
+    {
+      "id": "recovery.timeshift",
+      "name": "Recovery",
+      "description": "Detects Timeshift for future snapshot awareness.",
+      "risk": "medium",
+      "required": false,
+      "implemented": true,
+      "detect": {
+        "binary": "timeshift"
+      },
+      "default_enabled": false,
+      "requires_agent_for": [
+        "create_snapshot",
+        "restore"
+      ],
+      "background": false
+    }
+  ]
+}
