@@ -28,5 +28,4 @@ def setup_logger() -> logging.Logger:
     logger.addHandler(console_handler)
 
     logger.info("%s %s started", APP_NAME, VERSION)
-
     return logger
