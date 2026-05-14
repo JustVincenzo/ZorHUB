@@ -241,19 +241,3 @@ Approval may be granted for:
 - Official distribution channels.
 
 The maintainer may revoke official status if a project becomes unsafe, misleading, abandoned, incompatible, or inconsistent with ZorHUB’s goals.
-
-
-
-## Summary
-
-Forks, modifications, and community extensions are allowed.
-
-However:
-
-- They must not pretend to be the original ZorHUB.
-- They must not claim official approval without permission.
-- They must clearly identify themselves as unofficial when modified.
-- They must avoid confusing users.
-- Official status belongs only to maintainer-approved releases, extensions, and channels.
-
-ZorHUB’s code may be open, but the official identity of the project must remain clear.
