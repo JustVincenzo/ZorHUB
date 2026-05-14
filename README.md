@@ -280,7 +280,26 @@ Privileged installation actions may require ZorHUB Helper.
 
 ## Zorin Connect visual integration
 
-ZorHUB plans to integrate [**Zorin Connect**](https://zorin.com/os/#:~:text=Your%20phone%20and%20computer%20work,.)
+ZorHUB plans to integrate [**Zorin Connect**](https://zorin.com/os/#:~:text=Your%20phone%20and%20computer%20work,.) directly into its visual interface.
+
+The goal is not to replace Zorin Connect, duplicate its features, or create a separate device connection app. Instead, ZorHUB should act as a clearer and more centralized visual layer for Zorin Connect inside the hub experience.
+
+Zorin Connect would remain the underlying tool responsible for phone-to-computer communication. ZorHUB would provide a friendlier interface to display its status, expose useful actions, and make device integration easier to understand.
+
+Possible visual features inside ZorHUB:
+
+```text
+Connected phone status
+Phone battery level
+Connection state
+Send files
+Send links
+Find phone
+Open Zorin Connect settings
+Connection diagnostics
+Quick device actions
+```
+This means ZorHUB would not be a replacement for Zorin Connect. It would be a visual hub layer that makes Zorin Connect easier to access, understand, and use from one central place.
 
 ## License
 
