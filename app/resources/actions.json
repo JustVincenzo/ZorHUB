@@ -1,0 +1,49 @@
+{
+  "actions": [
+    {
+      "id": "refresh_metrics",
+      "name": "Refresh metrics",
+      "description": "Refreshes local system metrics.",
+      "risk": "low",
+      "requires_agent": false,
+      "requires_authorization": false,
+      "implemented": true
+    },
+    {
+      "id": "open_logs_folder",
+      "name": "Open logs folder",
+      "description": "Opens the local ZorHUB logs folder.",
+      "risk": "low",
+      "requires_agent": false,
+      "requires_authorization": false,
+      "implemented": true
+    },
+    {
+      "id": "check_component_status",
+      "name": "Check component status",
+      "description": "Refreshes component availability detection.",
+      "risk": "low",
+      "requires_agent": false,
+      "requires_authorization": false,
+      "implemented": true
+    },
+    {
+      "id": "packages.install",
+      "name": "Install package",
+      "description": "Future privileged package installation action. Not implemented in pα0.2.",
+      "risk": "high",
+      "requires_agent": true,
+      "requires_authorization": true,
+      "implemented": false
+    },
+    {
+      "id": "packages.repair",
+      "name": "Repair package manager",
+      "description": "Future privileged package repair action. Not implemented in pα0.2.",
+      "risk": "high",
+      "requires_agent": true,
+      "requires_authorization": true,
+      "implemented": false
+    }
+  ]
+}
