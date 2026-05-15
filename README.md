@@ -15,7 +15,7 @@ ZorHUB is currently in early development.
 Current target:
 
 ```text
-ZorHUB v0.1
+ZorHUB pα0.2
 - Local desktop prototype
 - Main dashboard
 - System status score
