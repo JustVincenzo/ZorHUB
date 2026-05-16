@@ -1,8 +1,8 @@
 APP_NAME = "ZorHUB"
-VERSION = "pα0.2"
-CODENAME = "Consent & Components"
+VERSION = "pα0.2.1-dev"
+CODENAME = "Layout & UX fixes"
 CHANNEL = "private-pre-alpha"
-PUBLIC_RELEASE = False
+PUBLIC_RELEASE = True
 STABILITY = "experimental"
 
 MAINTAINER = "Vynzaro"
