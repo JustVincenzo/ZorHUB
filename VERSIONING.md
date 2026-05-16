@@ -5,7 +5,8 @@ ZorHUB uses a  staged versioning model.
 ## Private pre-alpha
 
 ```text
-pα0.x.PATCH
+pα0.x
+if not: pα0.x.PATCH
 ```
 
 Examples:
