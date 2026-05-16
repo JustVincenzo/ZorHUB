@@ -5,15 +5,15 @@ ZorHUB uses a  staged versioning model.
 ## Private pre-alpha
 
 ```text
-pα0.x
+pα0.x.PATCH
 ```
 
 Examples:
 
 ```text
 pα0.1
-pα0.2
-pα0.3
+pα0.2.8
+pα0.3.4
 ```
 
 Private pre-alpha builds are not public releases. THey are incomplete, unstable and may contain simuled behavior.
