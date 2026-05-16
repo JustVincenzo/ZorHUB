@@ -52,8 +52,9 @@ class SettingsView(Gtk.ScrolledWindow):
         combo.append("light", "Light")
         combo.append("dark", "Dark")
         combo.set_active_id(self.config.get("appearance", "system"))
-        combo.connect("changed", self._on_appearance_changed)
-        row = Adw.ActionRow(title="Theme mode", subtitle="Default: follow system appearance")
+        combo.connect("changed", self._on_appearance_changed)row = Adw.ActionRow()
+        row.set_title("Theme mode")
+        row.set_subtitle("Default: follow system appearance")
         row.add_suffix(combo)
         group.add(row)
         return group
@@ -65,7 +66,9 @@ class SettingsView(Gtk.ScrolledWindow):
         combo.append("advanced", "Advanced")
         combo.set_active_id(self.config.get("user_mode", "simple"))
         combo.connect("changed", self._on_user_mode_changed)
-        row = Adw.ActionRow(title="Information level", subtitle="Advanced mode may show technical details")
+        row = Adw.ActionRow()
+        row.set_title("Information level")
+        row.set_subtitle("Advanced mode may show technical details")
         row.add_suffix(combo)
         group.add(row)
         return group
@@ -75,14 +78,20 @@ class SettingsView(Gtk.ScrolledWindow):
         switch = Gtk.Switch()
         switch.set_active(bool(self.config.get("background_allowed", False)))
         switch.connect("notify::active", self._on_background_changed)
-        row = Adw.ActionRow(title="Allow background behavior", subtitle="pα0.2 stores consent only. No background service is active yet.")
+        row = Adw.ActionRow()
+        row.set_title("Allow background behavior")
+        row.set_subtitle("pα0.2.1-dev stores consent only. No background service is active yet.")
+        row.set_subtitle_lines(3)
         row.add_suffix(switch)
         group.add(row)
         return group
 
     def _logs_group(self) -> Adw.PreferencesGroup:
         group = Adw.PreferencesGroup(title="Logs")
-        row = Adw.ActionRow(title="Log location", subtitle=str(LOG_DIR))
+        row = Adw.ActionRow()
+        row.set_title("Log location")
+        row.set_subtitle(str(LOG_DIR))
+        row.set_subtitle_lines(3)
         group.add(row)
         return group
 
