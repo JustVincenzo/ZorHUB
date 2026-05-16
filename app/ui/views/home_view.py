@@ -1,3 +1,8 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Vynzaro
+#
+# This file is part of ZorHUB.
+
 class HomeView(Gtk.ScrolledWindow):
     def __init__(self) -> None:
         super().__init__()
