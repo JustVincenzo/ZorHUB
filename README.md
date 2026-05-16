@@ -12,17 +12,7 @@ ZorHUB is inspired by the user experience philosophy of tools like Samsung Devic
 
 ZorHUB is currently in early development.
 
-Current target:
-
-```text
-ZorHUB pα0.2
-- Local desktop prototype
-- Main dashboard
-- System status score
-- CPU, RAM, disk, and battery metrics
-- Human-readable language and recommendations
-- Basic energy profile interface
-```
+[IN PROGRESS]
 
 Future target:
 
