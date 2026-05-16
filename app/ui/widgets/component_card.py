@@ -1,3 +1,8 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Vynzaro
+#
+# This file is part of ZorHUB.
+
 import gi
 
 gi.require_version("Gtk", "4.0")
