@@ -1,3 +1,8 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Vynzaro
+#
+# This file is part of ZorHUB.
+
 import gi
 
 gi.require_version("Gtk", "4.0")
@@ -11,6 +16,11 @@ from app.core.paths import LOG_DIR
 class SettingsView(Gtk.ScrolledWindow):
     def __init__(self, config: ConfigManager) -> None:
         super().__init__()
+
+        self.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
+        self.set_hexpand(True)
+        self.set_vexpand(True)
+
         self.config = config
 
         content = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=16)
@@ -18,10 +28,14 @@ class SettingsView(Gtk.ScrolledWindow):
         content.set_margin_bottom(24)
         content.set_margin_start(24)
         content.set_margin_end(24)
+        content.set_hexpand(True)
+        content.set_vexpand(False)
 
         title = Gtk.Label(label="Settings")
         title.add_css_class("title-1")
         title.set_halign(Gtk.Align.START)
+        title.set_xalign(0)
+        title.set_wrap(True)
         content.append(title)
 
         content.append(self._appearance_group())
