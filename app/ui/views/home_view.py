@@ -3,6 +3,17 @@
 #
 # This file is part of ZorHUB.
 
+import gi
+
+gi.require_version("Gtk", "4.0")
+from gi.repository import Gtk
+
+from app.services.performance_service import get_performance_metrics, describe_performance
+from app.services.storage_service import get_storage_metrics, describe_storage
+from app.services.power_service import get_battery_status, get_power_profile
+from app.ui.widgets.status_card import StatusCard
+from app.ui.widgets.metric_card import MetricCard
+
 class HomeView(Gtk.ScrolledWindow):
     def __init__(self) -> None:
         super().__init__()
