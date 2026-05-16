@@ -94,7 +94,7 @@ class ZorHubWindow(Adw.ApplicationWindow):
         self.stack.add_titled(HomeView(), "home", "Home")
         self.stack.add_titled(PerformanceView(), "performance", "Performance")
         self.stack.add_titled(StorageView(), "storage", "Storage")
-        self.stack.add_titled(ComponentsView(self.config), "components", "Components")
+        self.stack.add_titled(ComponentsView(self.config, self.history), "components", "Components")
         self.stack.add_titled(HistoryView(self.history), "history", "History")
         self.stack.add_titled(SettingsView(self.config), "settings", "Settings")
         self.stack.add_titled(AboutView(), "about", "About")
